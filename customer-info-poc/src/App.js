@@ -1,6 +1,6 @@
 import React from "react";
 import { Provider } from "react-redux";
-import { Header } from "./components/features/content";
+import Header from "./components/features/content/Header";
 import CustomerDetail from "./components/features/Customer";
 
 import GlobalStyle from "./styles/globalStyles";
