@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Customer Details View Rendered should renders correctly 1`] = `
+<div>
+  <h3>
+    Below Customer detail saved successfully!
+  </h3>
+  <p>
+    Name :
+    Mr Rajeev Jain
+  </p>
+  <p>
+    Date of Birth: 
+    08/08/1983
+  </p>
+  <p>
+    Has your name changed in the last 12 months? : 
+    yes
+  </p>
+  <styled.button
+    onClick={[Function]}
+  >
+    Ok
+  </styled.button>
+</div>
+`;

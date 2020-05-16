@@ -1,0 +1,326 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Customer Details View Rendered should renders correctly 1`] = `
+<div>
+  <form>
+    <div
+      className="field-container"
+    >
+      <label>
+        Title
+      </label>
+      <div
+        className="field"
+      >
+        <Field
+          component={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "baseHash": 1842686996,
+                "componentId": "sc-AxiKw",
+                "isStatic": false,
+                "rules": Array [
+                  "
+    ",
+                  "
+  .error-container {
+    background-color: #fff4e9;
+    color: black;
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  select {
+    border: 1px solid #d8d8d8;
+    background-color: white;
+    border-radius: 0px;
+    outline: 0px;
+    padding: 10px;
+    width: 100%;
+    outline-style: none;
+    appearance: none;
+    color: #d8d8d8;
+    font-size: 18px;
+    background: url(/carrot-small-down.png) right 5px bottom 15px no-repeat;
+  }
+  select:focus {
+    border: 1px solid orange;
+    outline-style: none;
+    color: black;
+  }
+",
+                  ";
+  ",
+                ],
+                "staticRulesId": "",
+              },
+              "displayName": "Styled(Select)",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "shouldForwardProp": undefined,
+              "styledComponentId": "sc-AxiKw",
+              "target": [Function],
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          name="title"
+        >
+          <option
+            defaultChecked={true}
+          >
+            Select
+          </option>
+          <option
+            value="Mr"
+          >
+            Mr
+          </option>
+          <option
+            value="Mrs"
+          >
+            Mrs
+          </option>
+          <option
+            value="Miss"
+          >
+            Miss
+          </option>
+        </Field>
+      </div>
+    </div>
+    <div
+      className="field-container"
+    >
+      <label>
+        First Name
+      </label>
+      <div
+        className="field"
+      >
+        <Field
+          component={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "baseHash": 640081696,
+                "componentId": "sc-AxirZ",
+                "isStatic": false,
+                "rules": Array [
+                  "
+    ",
+                  "
+  .error-container {
+    background-color: #fff4e9;
+    color: black;
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  input {
+    border: 1px solid #d8d8d8;
+    background-color: white;
+    color: #d8d8d8;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  input:focus {
+    border: 1px solid orange;
+    outline-style: none;
+    color: black;
+  }
+",
+                  ";
+  ",
+                ],
+                "staticRulesId": "",
+              },
+              "displayName": "Styled(Input)",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "shouldForwardProp": undefined,
+              "styledComponentId": "sc-AxirZ",
+              "target": [Function],
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          name="firstName"
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      className="field-container"
+    >
+      <label>
+        Last Name
+      </label>
+      <div
+        className="field"
+      >
+        <Field
+          component={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "baseHash": 640081696,
+                "componentId": "sc-AxirZ",
+                "isStatic": false,
+                "rules": Array [
+                  "
+    ",
+                  "
+  .error-container {
+    background-color: #fff4e9;
+    color: black;
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  input {
+    border: 1px solid #d8d8d8;
+    background-color: white;
+    color: #d8d8d8;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  input:focus {
+    border: 1px solid orange;
+    outline-style: none;
+    color: black;
+  }
+",
+                  ";
+  ",
+                ],
+                "staticRulesId": "",
+              },
+              "displayName": "Styled(Input)",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "shouldForwardProp": undefined,
+              "styledComponentId": "sc-AxirZ",
+              "target": [Function],
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          name="lastName"
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      className="field-container"
+    >
+      <label>
+        Has your name changed in the last 12 months?
+      </label>
+      <div
+        className="field"
+      >
+        <Field
+          component={[Function]}
+          name="lastName"
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      className="field-container"
+    >
+      <label>
+        Date of Birth
+      </label>
+      <div
+        className="field"
+      >
+        <Field
+          component={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "baseHash": 640081696,
+                "componentId": "sc-AxirZ",
+                "isStatic": false,
+                "rules": Array [
+                  "
+    ",
+                  "
+  .error-container {
+    background-color: #fff4e9;
+    color: black;
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  input {
+    border: 1px solid #d8d8d8;
+    background-color: white;
+    color: #d8d8d8;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  input:focus {
+    border: 1px solid orange;
+    outline-style: none;
+    color: black;
+  }
+",
+                  ";
+  ",
+                ],
+                "staticRulesId": "",
+              },
+              "displayName": "Styled(Input)",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "shouldForwardProp": undefined,
+              "styledComponentId": "sc-AxirZ",
+              "target": [Function],
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          name="dateOfBirth"
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      className="btn-Container"
+    >
+      <styled.button
+        className="btnStyle"
+        type="submit"
+      >
+        Save
+      </styled.button>
+      <styled.button
+        className="btnCancel"
+      >
+        Cancel
+      </styled.button>
+    </div>
+  </form>
+</div>
+`;
