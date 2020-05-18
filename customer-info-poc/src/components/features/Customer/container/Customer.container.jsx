@@ -25,6 +25,7 @@ export class Customer extends React.PureComponent {
   submitCustomer(values) {
     const customerDetail = {
       ...values,
+      createdOn: new Date().toLocaleString("en-GB"),
     };
 
     const { saveCustomer } = this.props;

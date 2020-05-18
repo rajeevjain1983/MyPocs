@@ -36,6 +36,12 @@ export default css`
   .btnCancel {
     margin-left: 5px;
   }
+  .error-container {
+    background-color: #fff4e9;
+    color: black;
+    padding: 15px;
+    font-size: 18px;
+  }
 
   @media (min-width: 768px) {
     width: 400px;
