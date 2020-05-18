@@ -1,6 +1,12 @@
 import React from "react";
 import { reduxForm, Field } from "redux-form";
-import { Input, Button, Select, DatePicker } from "../../../common/atoms";
+import {
+  Input,
+  Button,
+  Select,
+  DatePicker,
+  RadioButtons,
+} from "../../../common/atoms";
 import withStyle from "../../../common/hoc/withStyle";
 import styles from "../style/CustomerForm.style";
 
@@ -47,34 +53,6 @@ const checkValidation = (values) => {
   }
 
   return errors;
-};
-
-const renderNameChanged = ({
-  options,
-  input,
-  meta: { touched, error, warning },
-}) => {
-  return (
-    <div className="radio-container">
-      {options.map((o) => (
-        <label key={o.value}>
-          <input
-            type="radio"
-            {...input}
-            value={o.value}
-            checked={o.value === input.value}
-          />{" "}
-          {o.title}
-        </label>
-      ))}
-      {touched && error && (
-        <div className="error-container">
-          <strong>Warning: </strong>
-          {error}
-        </div>
-      )}
-    </div>
-  );
 };
 
 export class CustomerForm extends React.PureComponent {
@@ -158,7 +136,7 @@ export class CustomerForm extends React.PureComponent {
             <div className="field">
               <Field
                 name="nameChanged"
-                component={renderNameChanged}
+                component={RadioButtons}
                 options={[
                   { title: "Yes", value: "yes" },
                   { title: "No", value: "no" },

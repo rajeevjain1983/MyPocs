@@ -2,7 +2,9 @@
 
 exports[`Customer Details View Rendered should renders correctly 1`] = `
 <div>
-  <form>
+  <form
+    autoComplete="off"
+  >
     <div
       className="field-container"
     >
@@ -102,6 +104,7 @@ exports[`Customer Details View Rendered should renders correctly 1`] = `
         className="field"
       >
         <Field
+          autoComplete="of"
           component={
             Object {
               "$$typeof": Symbol(react.forward_ref),
@@ -168,6 +171,7 @@ exports[`Customer Details View Rendered should renders correctly 1`] = `
         className="field"
       >
         <Field
+          autoComplete="of"
           component={
             Object {
               "$$typeof": Symbol(react.forward_ref),
@@ -234,9 +238,111 @@ exports[`Customer Details View Rendered should renders correctly 1`] = `
         className="field"
       >
         <Field
-          component={[Function]}
-          name="lastName"
-          type="text"
+          component={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "baseHash": 2075994405,
+                "componentId": "sc-AxhUy",
+                "isStatic": false,
+                "rules": Array [
+                  "
+    ",
+                  "
+  .radioContainer {
+    display: flex;
+  }
+
+  /* The container */
+  .radioLabel {
+    margin-bottom: 0px;
+    display: block;
+    position: relative;
+    padding: 5px 15px 5px 35px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  /* Hide the browser's default radio button */
+  .radioLabel input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #d8d8d8;
+    border-radius: 50%;
+  }
+
+  /* On mouse-over, add a grey background color */
+  .radioLabel:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  /* When the radio button is checked, add a blue background */
+  .radioLabel input:checked ~ .checkmark {
+    background-color: rgb(0, 48, 87);
+  }
+
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: \\"\\";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the indicator (dot/circle) when checked */
+  .radioLabel input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the indicator (dot/circle) */
+  .radioLabel .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+  }
+",
+                  ";
+  ",
+                ],
+                "staticRulesId": "",
+              },
+              "displayName": "Styled(RadioButtons)",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "shouldForwardProp": undefined,
+              "styledComponentId": "sc-AxhUy",
+              "target": [Function],
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          name="nameChanged"
+          options={
+            Array [
+              Object {
+                "title": "Yes",
+                "value": "yes",
+              },
+              Object {
+                "title": "No",
+                "value": "no",
+              },
+            ]
+          }
         />
       </div>
     </div>
@@ -255,8 +361,8 @@ exports[`Customer Details View Rendered should renders correctly 1`] = `
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "baseHash": 640081696,
-                "componentId": "sc-AxirZ",
+                "baseHash": 1845756808,
+                "componentId": "sc-AxhCb",
                 "isStatic": false,
                 "rules": Array [
                   "
@@ -284,17 +390,20 @@ exports[`Customer Details View Rendered should renders correctly 1`] = `
     outline-style: none;
     color: black;
   }
+  .react-datepicker-wrapper {
+    width: 100%;
+  }
 ",
                   ";
   ",
                 ],
                 "staticRulesId": "",
               },
-              "displayName": "Styled(Input)",
+              "displayName": "Styled(DatePickerView)",
               "foldedComponentIds": Array [],
               "render": [Function],
               "shouldForwardProp": undefined,
-              "styledComponentId": "sc-AxirZ",
+              "styledComponentId": "sc-AxhCb",
               "target": [Function],
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -302,6 +411,8 @@ exports[`Customer Details View Rendered should renders correctly 1`] = `
             }
           }
           name="dateOfBirth"
+          onChange={[Function]}
+          selected={2020-05-18T11:41:46.856Z}
           type="text"
         />
       </div>
