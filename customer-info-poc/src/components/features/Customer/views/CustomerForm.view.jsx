@@ -1,6 +1,6 @@
 import React from "react";
 import { reduxForm, Field } from "redux-form";
-import { Input, Button, Select } from "../../../common/atoms";
+import { Input, Button, Select, DatePicker } from "../../../common/atoms";
 import withStyle from "../../../common/hoc/withStyle";
 import styles from "../style/CustomerForm.style";
 
@@ -33,8 +33,12 @@ const checkValidation = (values) => {
 
   if (!values.dateOfBirth) {
     errors.dateOfBirth = "Please enter Date of Birth.";
-  } else if (!values.dateOfBirth.match(dateformat)) {
-    errors.dateOfBirth = "Please check you've entered invalid Date.";
+  } else {
+    const date = new Date(values.dateOfBirth);
+    const dateOfBirth = date.toLocaleDateString();
+    if (!dateOfBirth.match(dateformat)) {
+      errors.dateOfBirth = "Please check you've entered invalid Date.";
+    }
   }
 
   return errors;
@@ -77,7 +81,7 @@ export const CustomerForm = ({
 }) => {
   return (
     <div className={className}>
-      <form onSubmit={handleSubmit(submitCustomer)}>
+      <form autocomplete="off" onSubmit={handleSubmit(submitCustomer)}>
         <div className="field-container">
           <label>Title</label>
           <div className="field">
@@ -93,14 +97,24 @@ export const CustomerForm = ({
         <div className="field-container">
           <label>First Name</label>
           <div className="field">
-            <Field component={Input} type="text" name="firstName" />
+            <Field
+              autocomplete="of"
+              component={Input}
+              type="text"
+              name="firstName"
+            />
           </div>
         </div>
 
         <div className="field-container">
           <label>Last Name</label>
           <div className="field">
-            <Field component={Input} type="text" name="lastName" />
+            <Field
+              autocomplete="of"
+              component={Input}
+              type="text"
+              name="lastName"
+            />
           </div>
         </div>
 
@@ -114,7 +128,12 @@ export const CustomerForm = ({
         <div className="field-container">
           <label>Date of Birth</label>
           <div className="field">
-            <Field component={Input} type="text" name="dateOfBirth" />
+            <Field
+              autocomplete="of"
+              component={DatePicker}
+              type="text"
+              name="dateOfBirth"
+            />
           </div>
         </div>
 
