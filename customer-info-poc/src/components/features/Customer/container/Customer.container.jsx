@@ -54,7 +54,10 @@ export class Customer extends React.PureComponent {
             )}
           </Modal>
         )}
-        <CustomerFormView submitCustomer={this.submitCustomer} />
+        <CustomerFormView
+          saveCallStatus={saveCallStatus}
+          submitCustomer={this.submitCustomer}
+        />
       </>
     );
   }

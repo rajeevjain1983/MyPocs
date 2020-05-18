@@ -93,6 +93,18 @@ export class CustomerForm extends React.PureComponent {
     });
   }
 
+  componentDidUpdate(prevProps) {
+    const { saveCallStatus, reset } = this.props;
+    if (
+      saveCallStatus &&
+      saveCallStatus.success &&
+      prevProps.saveCallStatus !== saveCallStatus &&
+      reset
+    ) {
+      reset();
+    }
+  }
+
   render() {
     const {
       className,
